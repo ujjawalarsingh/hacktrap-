@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackTrap - AI-Powered Honeypot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <a href="map.html">Attack Map</a>
+        <a href="scanner.html">Malware Scanner</a>
+        <a href="settings.html">Settings</a>
+        <a href="logs.html">Logs</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>🚨 <span class="glow">HackTrap</span></h1>
+            <p>AI-Powered Honeypot to Detect & Trap Hackers</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="stat-box">
+                <h3>Attacks Blocked</h3>
+                <p class="count" id="attacks">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Hackers Trapped</h3>
+                <p class="count" id="hackers">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Threat Level</h3>
+                <p class="count" id="threat">LOW</p>
+            </div>
+        </div>
+
+        <section class="threat-feed">
+            <h2>🛡️ Live Threat Feed</h2>
+            <div class="feed-container" id="threat-feed">
+                <!-- Dynamically populated -->
+                <div class="feed-item">
+                    <p>New attack detected: IP 192.168.1.15 attempting SQL injection.</p>
+                </div>
+                <div class="feed-item">
+                    <p>Alert: Suspicious traffic detected from Tor node.</p>
+                </div>
+            </div>
+            <p class="disclaimer">Real-time attack attempts against our honeypot</p>
+        </section>
+
+        <section class="health-monitor">
+            <h2>📊 System Health</h2>
+            <div class="gauges">
+                <div class="gauge" id="cpu-gauge">
+                    <div class="gauge-text">CPU</div>
+                    <div class="gauge-circle">
+                        <div class="gauge-fill" id="cpu-fill"></div>
+                    </div>
+                    <p id="cpu-status">Loading...</p>
+                </div>
+                <div class="gauge" id="memory-gauge">
+                    <div class="gauge-text">Memory</div>
+                    <div class="gauge-circle">
+                        <div class="gauge-fill" id="memory-fill"></div>
+                    </div>
+                    <p id="memory-status">Loading...</p>
+                </div>
+                <div class="gauge" id="threat-gauge">
+                    <div class="gauge-text">Threat Level</div>
+                    <div class="gauge-circle">
+                        <div class="gauge-fill" id="threat-fill"></div>
+                    </div>
+                    <p id="threat-status">Low</p>
+                </div>
+            </div>
+            <p class="disclaimer">Threat level algorithm v0.8 (reducing false positives)</p>
+        </section>
+
+
+        <div class="log">
+            <h2>📜 Attack Logs</h2>
+            <ul id="logs">
+                <li>System initialized. Monitoring for threats...</li>
+                <li>New attack attempt logged from IP 192.168.1.15</li>
+                <li>Warning: Malware detected in incoming traffic.</li>
+            </ul>
+        </div>
+
+        <section class="darkweb-module">
+            <h2>🌑 Dark Web Alerts</h2>
+            <div class="alerts" id="darkweb-alerts">
+                <div class="alert-item">
+                    <p>Alert: Credit card information found on a dark web marketplace.</p>
+                </div>
+                <div class="alert-item">
+                    <p>Alert: Data breach reported from an unprotected database.</p>
+                </div>
+            </div>
+            <p class="disclaimer">Monitoring underground sources</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="darkweb.js"></script>
+</body>
+
+</html>

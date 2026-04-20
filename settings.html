@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - HackTrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚙️ HackTrap Settings</h1>
+            <p>Adjust system preferences and configurations</p>
+        </header>
+
+        <section class="settings-section">
+            <h2>System Settings</h2>
+            <form id="settings-form">
+                <label for="threat-threshold">Threat Level Threshold</label>
+                <input type="range" id="threat-threshold" min="0" max="100" step="1" value="50">
+                <p>Threshold: <span id="threat-threshold-value">50</span>%</p>
+
+                <label for="alert-toggle">Enable Alerts</label>
+                <input type="checkbox" id="alert-toggle" checked>
+
+                <label for="log-level">Log Detail Level</label>
+                <select id="log-level">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+
+        <footer>
+            <p><a href="index.html">Back to Dashboard</a></p>
+        </footer>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

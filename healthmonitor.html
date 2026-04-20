@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Health - HackTrap</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="healthmonitor.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Dashboard</a>
+    <a href="threatfeed.html">Threat Feed</a>
+    <a href="healthmonitor.html">System Health</a>
+  </div>
+
+  <div class="container">
+    <h1>📊 System Health Monitor</h1>
+    <div class="gauges">
+      <div class="gauge" id="cpu-gauge"></div>
+      <div class="gauge" id="memory-gauge"></div>
+      <div class="gauge" id="threat-gauge"></div>
+    </div>
+    <p class="disclaimer">Live metrics from the honeypot environment</p>
+  </div>
+</body>
+</html>
